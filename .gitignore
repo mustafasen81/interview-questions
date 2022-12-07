@@ -3,9 +3,4 @@
 **/bin/
 **/obj/
 
-**/catch2
-**/CMakeFiles
-
-CMakeCache.txt
-*.cmake
-Makefile
+**/build
