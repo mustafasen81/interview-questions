@@ -98,7 +98,7 @@ public class LinkedList<T> : IEnumerable<T?>
 
         if (Equals(data, Head))
         {
-            RemoveFirst();
+            RemoveFront();
             return;
         }
 
@@ -114,7 +114,7 @@ public class LinkedList<T> : IEnumerable<T?>
         }
     }
 
-    public void RemoveLast()
+    public void RemoveBack()
     {
         if (Empty)
         {
@@ -123,7 +123,7 @@ public class LinkedList<T> : IEnumerable<T?>
         RemoveAt(Size - 1);
     }
 
-    public void RemoveFirst()
+    public void RemoveFront()
     {
         if (Empty)
         {
@@ -146,7 +146,7 @@ public class LinkedList<T> : IEnumerable<T?>
 
         if (index == 0)
         {
-            RemoveFirst();
+            RemoveFront();
         }
 
         var current = Head;

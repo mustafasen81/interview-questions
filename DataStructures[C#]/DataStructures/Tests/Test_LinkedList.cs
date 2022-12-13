@@ -110,26 +110,26 @@ public class Test_LinkedList
         Assert.Equal(3, list.PeekFront());
         Assert.Equal(8, list.PeekBack());
 
-        list.RemoveFirst();
+        list.RemoveFront();
 
         Assert.False(list.Empty);
         Assert.Equal(2, list.Size);
         Assert.Equal(5, list.PeekFront());
         Assert.Equal(8, list.PeekBack());
 
-        list.RemoveFirst();
+        list.RemoveFront();
 
         Assert.False(list.Empty);
         Assert.Equal(1, list.Size);
         Assert.Equal(8, list.PeekFront());
         Assert.Equal(8, list.PeekBack());
 
-        list.RemoveFirst();
+        list.RemoveFront();
 
         Assert.True(list.Empty);
         Assert.Equal(0, list.Size);
 
-        Assert.Throws<InvalidOperationException>(() => list.RemoveFirst());
+        Assert.Throws<InvalidOperationException>(() => list.RemoveFront());
     }
 
     [Fact]
@@ -186,26 +186,26 @@ public class Test_LinkedList
         Assert.Equal(3, list.PeekFront());
         Assert.Equal(8, list.PeekBack());
 
-        list.RemoveLast();
+        list.RemoveBack();
 
         Assert.False(list.Empty);
         Assert.Equal(2, list.Size);
         Assert.Equal(3, list.PeekFront());
         Assert.Equal(5, list.PeekBack());
 
-        list.RemoveLast();
+        list.RemoveBack();
 
         Assert.False(list.Empty);
         Assert.Equal(1, list.Size);
         Assert.Equal(3, list.PeekFront());
         Assert.Equal(3, list.PeekBack());
 
-        list.RemoveLast();
+        list.RemoveBack();
 
         Assert.True(list.Empty);
         Assert.Equal(0, list.Size);
 
-        Assert.Throws<InvalidOperationException>(() => list.RemoveLast());
+        Assert.Throws<InvalidOperationException>(() => list.RemoveBack());
     }
 
     [Fact]
